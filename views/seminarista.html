@@ -1,0 +1,50 @@
+<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
+    <div>
+        <h3 class="fw-bold mb-3">Vestes Litúrgicas</h3>
+        <h6 class="op-7 mb-2">Diocese de Roma</h6>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-round">
+            <div class="card-header">
+                <div class="card-head-row card-tools-still-right">
+                    <div class="card-title">Vestes Litúrgicas Seminarista</div>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <!-- Projects table -->
+                    <table class="table align-items-center mb-0">
+                        <thead class="thead-light" ng-if="!options.decapitate" md-head md-order="query.order" md-on-reorder="logOrder">
+                            <tr>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Categoria</th>
+                                <th scope="col" class="text-end">Arquivo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="seminaristas in seminaristas.data | filter: filterSeminaristas | orderBy: query.order | limitTo: query.limit : (query.page - 1) * query.limit" style="margin: 10px; padding: 10px;">
+                                <th scope="row" >
+                                    {{seminaristas.descricao}}
+                                </th>
+                                <th scope="row" >
+                                    {{seminaristas.categoria}}
+                                </th>
+                                <td class="text-end">
+                                    <a href="vestes/ordenacoes/padrao1/alva.png" download class="btn btn-success">
+                                        <span class="btn-label">
+                                            <i class="fa fa-download"></i>
+                                        </span>
+                                        Baixar
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
