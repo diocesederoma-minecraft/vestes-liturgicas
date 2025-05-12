@@ -1,0 +1,42 @@
+/* Remove margens/paddings padrão e define altura total */
+
+  
+  /* Wrapper usa flexbox para distribuir espaço entre header, main e footer */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que ocupe a altura total da tela */
+  }
+  
+  /* Header fixo no topo, se necessário */
+  header.main-header {
+    height: 60px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Espaço abaixo do header fixo */
+  .main-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px; /* Mesmo valor da altura do header */
+  }
+  
+  /* Conteúdo principal */
+  main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  /* Rodapé normal (não fixo) */
+  
+  
