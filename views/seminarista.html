@@ -8,11 +8,40 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card card-round">
+    <div class="card-header">
+        <div class="card-head-row card-tools-still-right">
+            <div class="card-title">Orientações para Seminaristas</div>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <div class="p-3">
+            <h5 class="mb-3"><strong>VESTES DOS SEMINARISTAS</strong></h5>
+
+            <p><strong>1. No uso cotidiano, os seminaristas devem usar:</strong></p>
+            <ul>
+                <li>Batina de cor preta;</li>
+                <li>Botões de cor preta;</li>
+                <li>Sapatos e meias de cor preta;</li>
+                <li>Faixa e franjas de cor preta.</li>
+            </ul>
+
+            <p><strong>2. Em celebrações litúrgicas, os seminaristas podem usar:</strong></p>
+            <ul>
+                <li>Batina e sobrepeliz branca <strong>(sem renda)</strong>;</li>
+                <li>Amito, alva e cíngulo.</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+        <div class="card card-round">
             <div class="card-header">
                 <div class="card-head-row card-tools-still-right">
-                    <div class="card-title">Vestes Litúrgicas Seminarista</div>
+                    <div class="card-title">Vestes Litúrgicas para Seminaristas</div>
                 </div>
             </div>
+            
             <div class="card-body p-0">
                 <div class="table-responsive">
                     <!-- Projects table -->
@@ -20,7 +49,7 @@
                         <thead class="thead-light" ng-if="!options.decapitate" md-head md-order="query.order" md-on-reorder="logOrder">
                             <tr>
                                 <th scope="col">Descrição</th>
-                                <th scope="col">Categoria</th>
+                                <th scope="col">Categoria/Cor Litúrgica</th>
                                 <th scope="col" class="text-end">Arquivo</th>
                             </tr>
                         </thead>
@@ -33,7 +62,7 @@
                                     {{seminaristas.categoria}}
                                 </th>
                                 <td class="text-end">
-                                    <a href="vestes/ordenacoes/padrao1/alva.png" download class="btn btn-success">
+                                    <a href="{{seminaristas.url}}" download class="btn btn-success">
                                         <span class="btn-label">
                                             <i class="fa fa-download"></i>
                                         </span>

@@ -2,36 +2,41 @@
     {
         "descricao": "Batina Cotidiana - Seminaristas e Diáconos",
         "categoria": "Uso Cotidiano",
-        "url": ""
+        "url": "vestes/batinas/i130i401batina-seminaristas-diaconos.png"
     },
     {
-        "descricao": "Batina com Soprepeliz",
-        "categoria": "",
-        "url": ""
+        "descricao": "Batina com Soprepeliz bordado",
+        "categoria": "Celebrações Litúrgicas",
+        "url": "vestes/seminarista/1748360672286batina-sobrepeliz-seminarista.png"
+    },
+    {
+        "descricao": "Batina com Soprepeliz sem Renda",
+        "categoria": "Celebrações Litúrgicas",
+        "url": "vestes/seminarista/Batina e Sobrepeliz Branca sem Renda.png"
     },
     {
         "descricao": "Alva Branca com Cíngulo Dourado",
-        "categoria": "",
-        "url": ""
+        "categoria": "Branco",
+        "url": "vestes/seminarista/Túnica com Cíngulo Dourado.png"
     },
     {
         "descricao": "Alva Branca com Cíngulo Cinza",
-        "categoria": "",
-        "url": ""
+        "categoria": "Cinza",
+        "url": "vestes/seminarista/Túnica com Cíngulo Cinza.png"
     },
     {
         "descricao": "Alva Branca com Cíngulo Verde",
-        "categoria": "",
-        "url": ""
+        "categoria": "Verde",
+        "url": "vestes/seminarista/Túnica com Cíngulo Verde.png"
     },
     {
         "descricao": "Alva Branca com Cíngulo Vermelho",
-        "categoria": "",
-        "url": ""
+        "categoria": "Vermelho",
+        "url": "vestes/seminarista/Túnica com Cíngulo Vermelho.png"
     },
     {
         "descricao": "Alva Branca com Cíngulo Roxo",
-        "categoria": "",
-        "url": ""
+        "categoria": "Roxo",
+        "url": "vestes/seminarista/Túnica com Cíngulo Roxo.png"
     }
 ]
