@@ -1,0 +1,81 @@
+<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
+    <div>
+        <h3 class="fw-bold mb-3">Vestes Litúrgicas</h3>
+        <h6 class="op-7 mb-2">Diocese de Roma</h6>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-round">
+    <div class="card-header">
+        <div class="card-head-row card-tools-still-right">
+            <div class="card-title">Orientações para Diáconos</div>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <div class="p-3">
+            <h5 class="mb-3"><strong>VESTES DOS DIÁCONOS</strong></h5>
+
+            <p><strong>4. No uso cotidiano, diáconos e sacerdotes devem usar:</strong></p>
+            <ul>
+                <li>Batina de cor preta;</li>
+                <li>Botões de cor preta;</li>
+                <li>Sapatos e meias de cor preta;</li>
+                <li>Faixa e franjas de cor preta.</li>
+                <li>Peregrineta preta com detalhes pretos.</li>
+            </ul>
+
+            <p><strong>5. Em solenidades, os diáconos e sacerdotes podem usar: </strong></p>
+            <ul>
+                <li>Veste coral (batina e sobrepeliz);</li>
+                <li>Ferraiolo preto com detalhes pretos;</li>
+                <li>Barrete preto com borla preta.</li>
+            </ul>
+            <p><strong>9. Na presença do Santo Padre, os diáconos e sacerdotes não devem usar barrete. Ademais, em Roma (no Vaticano), o uso da peregrineta por diáconos, sacerdotes, monsenhores e cônegos é vedado.</strong></p>
+        </div>
+    </div>
+</div>
+        <div class="card card-round">
+            <div class="card-header">
+                <div class="card-head-row card-tools-still-right">
+                    <div class="card-title">Vestes Litúrgicas para Diáconos</div>
+                </div>
+            </div>
+            
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <!-- Projects table -->
+                    <table class="table align-items-center mb-0">
+                        <thead class="thead-light" ng-if="!options.decapitate" md-head md-order="query.order" md-on-reorder="logOrder">
+                            <tr>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Categoria/Cor Litúrgica</th>
+                                <th scope="col" class="text-end">Arquivo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="diaconos in diaconos.data | filter: filterDiaconos | orderBy: query.order | limitTo: query.limit : (query.page - 1) * query.limit" style="margin: 10px; padding: 10px;">
+                                <th scope="row" >
+                                    {{diaconos.descricao}}
+                                </th>
+                                <th scope="row" >
+                                    {{diaconos.categoria}}
+                                </th>
+                                <td class="text-end">
+                                    <a href="{{diaconos.url}}" download class="btn btn-success">
+                                        <span class="btn-label">
+                                            <i class="fa fa-download"></i>
+                                        </span>
+                                        Baixar
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

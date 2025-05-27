@@ -22,6 +22,11 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider) {
             title: 'Vestes Seminaristas',
             templateUrl: 'views/seminarista.html',
             controller: 'seminaristaController'
+        })
+        .state('diacono', {
+            url: '/d13503988fc/diacono',
+            title: 'Vestes Diáconos',
+            templateUrl: 'views/diacono.html',
+            controller: 'diaconoController'
         });
 })
-
